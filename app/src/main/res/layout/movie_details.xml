@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/dPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxHeight="160dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+
+    <TextView
+        android:id="@+id/dTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dPoster"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/dPoster"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/criticsScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dTitle"
+        android:layout_below="@+id/dTitle"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/audienceScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/criticsScore"
+        android:layout_below="@+id/criticsScore"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dCast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/audienceScore"
+        android:layout_below="@+id/audienceScore"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/dReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_below="@+id/dCast"
+        android:text="Reviews"/>
+
+    <TextView
+        android:id="@+id/dSynopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/dReviews" />
+
+</RelativeLayout>
